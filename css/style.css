@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.d-flex {
+    display: flex;
+    flex-direction: column;
+}
+
+body {
+    height: 100vh;
+}
+
+.main-content {
+
+    background-color: blue;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    width: calc(100% - 100px);
+
+}
+
+main {
+    display: flex;
+    height: 90%
+}
+
+header {
+    color: aliceblue;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    height: 100px;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.sidebar {
+    background-color: black;
+    width: 250px;
+    max-height: 100%;
+}
+
+footer {
+    min-height: 150px;
+    background-color: antiquewhite;
+    flex-shrink: 0;
+}
