@@ -5,17 +5,81 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
     <link rel="icon" href="https://images-na.ssl-images-amazon.com/images/I/51rttY7a+9L.png">
     <title>Spotify</title>
 </head>
 
 <body class="debug">
 
-    <main>
-        <header></header>
-        <div id="main-sidebar"></div>
-        <div class="main-content"></div>
+    <main class="d-flex">
+
+        <div id="full-sidebar">
+            <figure class="d-flex">
+                <img class="full-sidebar-logo ml-20" src="img/logo.svg" alt="Spotify">
+            </figure>
+
+            <div class="full-sidebar-main-menu mb-30">
+
+                <a class="full-sidebar-home d-flex" href="#">
+                    <img src="img/home.svg" alt="Home">
+                    <h4>Home</h4>
+                </a>
+
+                <a class="full-sidebar-search d-flex" href="#">
+                    <img src="img/search.svg" alt="Search">
+                    <h4>Cerca</h4>
+                </a>
+
+                <a class="full-sidebar-library d-flex" href="#">
+                    <img src="img/libreria.svg" alt="Library">
+                    <h4>La tua Libreria</h4>
+                </a>
+
+            </div>
+
+            <div class="full-sidebar-playlist">
+                <h3 class="mb-30 ml-20">PLAYLIST</h3>
+                <a class="new-playlist mb-30" href="#">
+                    <i class="fa-solid fa-plus fa-2x ml-20"></i><span>Crea Playlist</span>
+                </a>
+                <ul class="full-sidebar-list ml-20">
+                    <li><a href="#">Nome Playlist</a></li>
+                    <li><a href="#">Nome Playlist</a></li>
+                    <li><a href="#">Nome Playlist</a></li>
+                    <li><a href="#">Nome Playlist</a></li>
+                    <li><a href="#">Nome Playlist</a></li>
+                    <li><a href="#">Nome Playlist</a></li>
+                    <li><a href="#">Nome Playlist</a></li>
+
+
+
+                </ul>
+            </div>
+
+
+
+
+
+        </div>
+
+        <div class="main-content">
+
+            <header>
+                <a class="header-btn" href="#">EFFETTUA L'UPGRADE</a>
+            </header>
+
+        </div>
+
     </main>
 
     <footer></footer>
