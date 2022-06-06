@@ -20,70 +20,76 @@
 </head>
 
 <body class="debug">
+    <div class="wrapper">
 
-    <main class="d-flex">
+        <main class="d-flex">
 
-        <div id="full-sidebar">
-            <figure class="d-flex">
-                <img class="full-sidebar-logo ml-20" src="img/logo.svg" alt="Spotify">
-            </figure>
+            <div id="full-sidebar" class="d-flex-col space-between">
+                <div>
+                    <figure class="logo d-flex">
+                        <img class="full-sidebar-logo ml-20" src="img/logo.svg" alt="Spotify">
+                    </figure>
 
-            <div class="full-sidebar-main-menu mb-30">
+                    <div class="full-sidebar-main-menu mb-30">
 
-                <a class="full-sidebar-home d-flex" href="#">
-                    <img src="img/home.svg" alt="Home">
-                    <h4>Home</h4>
-                </a>
+                        <a class="full-sidebar-home d-flex" href="#">
+                            <img src="img/home.svg" alt="Home">
+                            <h4>Home</h4>
+                        </a>
 
-                <a class="full-sidebar-search d-flex" href="#">
-                    <img src="img/search.svg" alt="Search">
-                    <h4>Cerca</h4>
-                </a>
+                        <a class="full-sidebar-search d-flex" href="#">
+                            <img src="img/search.svg" alt="Search">
+                            <h4>Cerca</h4>
+                        </a>
 
-                <a class="full-sidebar-library d-flex" href="#">
-                    <img src="img/libreria.svg" alt="Library">
-                    <h4>La tua Libreria</h4>
-                </a>
+                        <a class="full-sidebar-library d-flex" href="#">
+                            <img src="img/libreria.svg" alt="Library">
+                            <h4>La tua Libreria</h4>
+                        </a>
+
+                    </div>
+
+                    <div class="full-sidebar-playlist">
+                        <h3 class="mb-30 ml-20">PLAYLIST</h3>
+                        <a class="new-playlist mb-30" href="#">
+                            <i class="fa-solid fa-plus fa-2x ml-20"></i><span>Crea Playlist</span>
+                        </a>
+                        <ul class="full-sidebar-list ml-20">
+                            <li><a href="#">Nome Playlist</a></li>
+                            <li><a href="#">Nome Playlist</a></li>
+                            <li><a href="#">Nome Playlist</a></li>
+                            <li><a href="#">Nome Playlist</a></li>
+                            <li><a href="#">Nome Playlist</a></li>
+                            <li><a href="#">Nome Playlist</a></li>
+                            <li><a href="#">Nome Playlist</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="sidebar-profile">
+                    <a><i class="fa-regular fa-arrow-down"></i> Installa App</a>
+                    <hr>
+                    <div class="d-flex">
+                        <figure><img src=" img/profile.svg" alt="">
+                        </figure>
+                        <h4>John Doe</h4>
+                    </div>
+                </div>
 
             </div>
 
-            <div class="full-sidebar-playlist">
-                <h3 class="mb-30 ml-20">PLAYLIST</h3>
-                <a class="new-playlist mb-30" href="#">
-                    <i class="fa-solid fa-plus fa-2x ml-20"></i><span>Crea Playlist</span>
-                </a>
-                <ul class="full-sidebar-list ml-20">
-                    <li><a href="#">Nome Playlist</a></li>
-                    <li><a href="#">Nome Playlist</a></li>
-                    <li><a href="#">Nome Playlist</a></li>
-                    <li><a href="#">Nome Playlist</a></li>
-                    <li><a href="#">Nome Playlist</a></li>
-                    <li><a href="#">Nome Playlist</a></li>
-                    <li><a href="#">Nome Playlist</a></li>
+            <div class="main-content">
 
+                <header>
+                    <a class="header-btn" href="#">EFFETTUA L'UPGRADE</a>
+                </header>
 
-
-                </ul>
             </div>
 
+        </main>
 
-
-
-
-        </div>
-
-        <div class="main-content">
-
-            <header>
-                <a class="header-btn" href="#">EFFETTUA L'UPGRADE</a>
-            </header>
-
-        </div>
-
-    </main>
-
-    <footer></footer>
-
+        <footer></footer>
+    </div>
 </body>
 
 </html>
