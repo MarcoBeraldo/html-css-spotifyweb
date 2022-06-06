@@ -53,9 +53,8 @@ main {
 
 .main-content {
     background-color: var(--bg-blue);
-    overflow-y: scroll;
-    overflow-x: hidden;
-    width: 100%;
+    overflow-y: auto;
+    flex-grow: 1;
 }
 
 /* sidebar */
@@ -63,7 +62,6 @@ main {
 #main-sidebar {
     background-color: black;
     width: 250px;
-    height: 100%;
 }
 
 
