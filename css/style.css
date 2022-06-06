@@ -430,9 +430,11 @@ footer .full-bar {
 }
 
 footer .volume {
+    flex-wrap: nowrap;
     color: #fff;
     align-items: center;
     justify-content: flex-end;
+    font-size: 0.8rem;
 }
 
 footer .volume .volume-bar {
@@ -445,5 +447,5 @@ footer .volume .volume-bar {
 .volume .fa-list,
 .volume .fa-display,
 .volume .fa-volume-high {
-    margin-right: 10px;
+    margin-right: 5px;
 }

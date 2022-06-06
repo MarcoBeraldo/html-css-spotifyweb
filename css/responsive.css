@@ -10,4 +10,21 @@
     header {
         left: 300px;
     }
+
+
+
+
+}
+
+
+@media screen and (min-width: 769px) {
+    footer .album .dt-d-flex {
+        flex-direction: row;
+    }
+
+    .volume .fa-list,
+    .volume .fa-display,
+    .volume .fa-volume-high {
+        margin-right: 10px;
+    }
 }
