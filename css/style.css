@@ -68,7 +68,7 @@ main {
 
 header {
     position: fixed;
-    left: 300px;
+    left: 80px;
     right: 0;
     top: 0;
     height: 100px;
@@ -82,7 +82,7 @@ header {
 .header-btn {
     display: inline-block;
     height: 50px;
-    padding: 0 40px;
+    padding: 0 35px;
     margin-right: 10px;
     line-height: 50px;
 
@@ -103,6 +103,9 @@ header {
     background-color: black;
     width: 300px;
     overflow-y: hidden;
+
+    display: none;
+
 }
 
 #full-sidebar .logo {
@@ -205,7 +208,8 @@ header {
     font-weight: 600;
 }
 
-.sidebar-profile .circle {
+.circle {
+    color: var(--font-white);
     display: inline-block;
     height: 1.2rem;
     width: 1.2rem;
@@ -213,7 +217,7 @@ header {
     border-radius: 50%;
 }
 
-.sidebar-profile .circle .fa-arrow-down {
+.circle .fa-arrow-down {
     padding-left: 2px;
 }
 
@@ -251,7 +255,7 @@ header {
 
 .sidebar-profile a {
     display: inline-block;
-    color: white;
+    color: var(--font-gray);
     margin-bottom: 10px;
 }
 
@@ -260,6 +264,44 @@ header {
     margin-right: 20px;
 }
 
+#min-sidebar {
+    width: 80px;
+    background-color: var(--bg-black);
+
+
+}
+
+.min-sidebar-search,
+.min-sidebar-library,
+.min-sidebar-home {
+    display: block;
+    height: 60px;
+    padding: 10px;
+}
+
+.min-sidebar-search img,
+.min-sidebar-library img,
+.min-sidebar-home img {
+    height: 40px;
+    margin-left: 10px;
+    margin-right: 10px;
+    vertical-align: middle;
+    margin-bottom: 30px;
+}
+
+#min-sidebar .profile img {
+    display: block;
+    background-color: var(--font-gray);
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+#min-sidebar .profile {
+    align-items: center;
+    justify-content: center;
+}
 
 
 

@@ -1,0 +1,13 @@
+@media screen and (min-width: 576px) {
+    #min-sidebar {
+        display: none;
+    }
+
+    #full-sidebar {
+        display: flex;
+    }
+
+    header {
+        left: 300px;
+    }
+}
