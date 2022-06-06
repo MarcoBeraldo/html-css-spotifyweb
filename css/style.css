@@ -102,7 +102,7 @@ header {
 #full-sidebar {
     background-color: black;
     width: 300px;
-    overflow-y: auto;
+    overflow-y: hidden;
 }
 
 #full-sidebar .logo {
@@ -203,12 +203,28 @@ header {
     text-decoration: none;
     color: var(--font-gray);
     font-weight: 600;
+}
 
+.sidebar-profile .circle {
+    display: inline-block;
+    height: 1.2rem;
+    width: 1.2rem;
+    border: 1px solid #fff;
+    border-radius: 50%;
+}
+
+.sidebar-profile .circle .fa-arrow-down {
+    padding-left: 2px;
 }
 
 .sidebar-profile {
-
     background-color: var(--bg-black);
+    margin-bottom: 20px;
+}
+
+.sidebar-profile .profile {
+    align-items: center;
+    height:
 }
 
 .sidebar-profile figure {
@@ -217,11 +233,13 @@ header {
     height: 50px;
     width: 50px;
     border-radius: 50%;
+    margin-right: 20px;
 }
 
 .sidebar-profile h4 {
-    display: block;
+    display: inline-block;
     color: #fff;
+    font-size: 1.3rem;
 }
 
 .sidebar-profile figure img {
@@ -232,8 +250,14 @@ header {
 }
 
 .sidebar-profile a {
+    display: inline-block;
     color: white;
+    margin-bottom: 10px;
+}
 
+.sidebar-profile hr {
+    margin-bottom: 10px;
+    margin-right: 20px;
 }
 
 
