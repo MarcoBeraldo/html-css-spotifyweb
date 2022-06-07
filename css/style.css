@@ -10,8 +10,8 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
-.wrapper {
-    height: 100vh;
+img {
+    max-width: 100%;
 }
 
 /* roots */
@@ -66,6 +66,7 @@ main {
     background-color: var(--bg-blue);
     overflow-y: auto;
     flex-grow: 1;
+    width: calc(100vw - 80px)
 }
 
 /* header */
@@ -118,10 +119,59 @@ main .main-navbar {
     flex-wrap: wrap;
     margin-top: 130px;
     list-style-type: none;
+    text-align: center;
+}
+
+#popular,
+#for-you,
+#recently-played {
+
+    margin: 10px 20px;
+    color: white;
+
+}
+
+#popular .row,
+#for-you .row,
+#recently-played .row {
+    list-style-type: none;
+    flex-wrap: wrap;
+    text-align: center;
+    margin: 0 -20px;
+}
+
+#popular li,
+#for-you li,
+#recently-played li {
+    flex-basis: 50%;
+    padding: 20px;
+}
+
+#popular article,
+#for-you article,
+#recently-played article {
+    margin-top: 20px;
+}
+
+#popular address,
+#for-you address,
+#recently-played address {
+    font-style: normal;
+    opacity: 0.5;
+}
+
+#popular h4,
+#for-you h4,
+#recently-played h4 {
+    margin: 15px 0;
 }
 
 
 
+#popular img {
+    object-fit: cover;
+    border-radius: 50%;
+}
 
 
 
@@ -137,6 +187,8 @@ main .main-navbar {
     display: none;
 
 }
+
+
 
 #full-sidebar .logo {
     height: 100px;
@@ -254,6 +306,7 @@ main .main-navbar {
 .sidebar-profile {
     background-color: var(--bg-black);
     margin-bottom: 20px;
+    height: 92px;
 }
 
 .sidebar-profile .profile {

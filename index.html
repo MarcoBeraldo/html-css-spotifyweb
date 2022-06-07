@@ -21,155 +21,265 @@
 
 <body class="debug">
 
-    <div class="wrapper">
 
-        <main class="d-flex">
+    <main class="d-flex">
 
-            <div id="full-sidebar" class="d-flex-col space-between">
-                <div>
-                    <figure class="logo d-flex">
-                        <img class="full-sidebar-logo ml-20" src="img/logo.svg" alt="Spotify">
-                    </figure>
+        <div id="full-sidebar" class="d-flex-col space-between">
+            <div class="top-sidebar">
+                <figure class="logo d-flex">
+                    <img class="full-sidebar-logo ml-20" src="img/logo.svg" alt="Spotify">
+                </figure>
 
-                    <div class="full-sidebar-main-menu mb-30">
+                <div class="full-sidebar-main-menu mb-30">
 
-                        <a class="full-sidebar-home d-flex" href="#">
-                            <img src="img/home.svg" alt="Home">
-                            <h4>Home</h4>
-                        </a>
-
-                        <a class="full-sidebar-search d-flex" href="#">
-                            <img src="img/search.svg" alt="Search">
-                            <h4>Cerca</h4>
-                        </a>
-
-                        <a class="full-sidebar-library d-flex" href="#">
-                            <img src="img/libreria.svg" alt="Library">
-                            <h4>La tua Libreria</h4>
-                        </a>
-
-                    </div>
-
-                    <div class="full-sidebar-playlist">
-                        <h3 class="mb-30 ml-20">PLAYLIST</h3>
-                        <a class="new-playlist mb-30" href="#">
-                            <i class="fa-solid fa-plus fa-2x ml-20"></i><span>Crea Playlist</span>
-                        </a>
-                        <ul class="full-sidebar-list ml-20">
-                            <li><a href="#">Nome Playlist</a></li>
-                            <li><a href="#">Nome Playlist</a></li>
-                            <li><a href="#">Nome Playlist</a></li>
-                            <li><a href="#">Nome Playlist</a></li>
-                            <li><a href="#">Nome Playlist</a></li>
-                            <li><a href="#">Nome Playlist</a></li>
-                            <li><a href="#">Nome Playlist</a></li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="sidebar-profile ml-20">
-                    <a>
-                        <div class="circle"><i class="fa-solid fa-arrow-down"></i></div> Installa App
+                    <a class="full-sidebar-home d-flex" href="#">
+                        <img src="img/home.svg" alt="Home">
+                        <h4>Home</h4>
                     </a>
-                    <hr>
-                    <div class="d-flex profile">
-                        <figure>
-                            <img src=" img/profile.svg" alt="">
-                        </figure>
-                        <h4>John Doe</h4>
-                    </div>
+
+                    <a class="full-sidebar-search d-flex" href="#">
+                        <img src="img/search.svg" alt="Search">
+                        <h4>Cerca</h4>
+                    </a>
+
+                    <a class="full-sidebar-library d-flex" href="#">
+                        <img src="img/libreria.svg" alt="Library">
+                        <h4>La tua Libreria</h4>
+                    </a>
+
                 </div>
 
+                <div class="full-sidebar-playlist">
+                    <h3 class="mb-30 ml-20">PLAYLIST</h3>
+                    <a class="new-playlist mb-30" href="#">
+                        <i class="fa-solid fa-plus fa-2x ml-20"></i><span>Crea Playlist</span>
+                    </a>
+                    <ul class="full-sidebar-list ml-20">
+                        <li><a href="#">Nome Playlist</a></li>
+                        <li><a href="#">Nome Playlist</a></li>
+                        <li><a href="#">Nome Playlist</a></li>
+                        <li><a href="#">Nome Playlist</a></li>
+                        <li><a href="#">Nome Playlist</a></li>
+                        <li><a href="#">Nome Playlist</a></li>
+                        <li><a href="#">Nome Playlist</a></li>
+                    </ul>
+                </div>
             </div>
 
-            <div id="min-sidebar" class="d-flex-col space-between">
-                <div>
-                    <figure class="d-flex-col min-sidebar-search min-sidebar-library min-sidebar-home">
-                        <img class="" src="img/logo-small.svg" alt="Spotify">
-                        <img src="img/home.svg" alt="Home">
-                        <img src="img/search.svg" alt="Cerca">
-                        <img src="img/libreria.svg" alt="La tua Libreria">
-                    </figure>
-                </div>
-                <div class="d-flex-col profile">
-                    <a>
-                        <div class="circle mb-30"><i class="fa-solid fa-arrow-down"></i></div>
-                    </a>
-                    <figure class="">
+            <div class="sidebar-profile ml-20">
+                <a>
+                    <div class="circle"><i class="fa-solid fa-arrow-down"></i></div> Installa App
+                </a>
+                <hr>
+                <div class="d-flex profile">
+                    <figure>
                         <img src=" img/profile.svg" alt="">
                     </figure>
+                    <h4>John Doe</h4>
                 </div>
             </div>
 
-            <div class="main-content">
+        </div>
 
-                <header>
-                    <a class="header-btn" href="#">EFFETTUA L'UPGRADE</a>
-                </header>
-
-                <nav>
-                    <ul CLASS="main-navbar d-flex">
-                        <li><a href="#">IN EVIDENZA</a></li>
-                        <li><a href="#">PODCAST</a></li>
-                        <li><a href="#">CLASSIFICHE</a></li>
-                        <li><a href="#">GENERI E MOOD</a></li>
-                        <li><a href="#">NUOVE USCITE</a></li>
-                        <li><a href="#">SCOPRI</a></li>
-                    </ul>
-                </nav>
+        <div id="min-sidebar" class="d-flex-col space-between">
+            <div>
+                <figure class="d-flex-col min-sidebar-search min-sidebar-library min-sidebar-home">
+                    <img class="" src="img/logo-small.svg" alt="Spotify">
+                    <img src="img/home.svg" alt="Home">
+                    <img src="img/search.svg" alt="Cerca">
+                    <img src="img/libreria.svg" alt="La tua Libreria">
+                </figure>
             </div>
-
-        </main>
-
-        <footer class="d-flex">
-
-            <div class="album d-flex">
-                <div class="d-flex">
-                    <figure><img src="img/sinister.jpeg" alt="Sinister"></figure>
-                    <p>Sinister<br><span>Brano Nome</span></p>
-                </div>
-                <div class="d-flex-col dt-d-flex justify-center">
-                    <i class="fa-regular fa-folder"></i>
-                    <i class="fa-regular fa-heart"></i>
-                </div>
+            <div class="d-flex-col profile">
+                <a>
+                    <div class="circle mb-30"><i class="fa-solid fa-arrow-down"></i></div>
+                </a>
+                <figure class="">
+                    <img src=" img/profile.svg" alt="">
+                </figure>
             </div>
+        </div>
+
+        <div class="main-content">
+
+            <header>
+                <a class="header-btn" href="#">EFFETTUA L'UPGRADE</a>
+            </header>
+
+            <nav>
+                <ul CLASS="main-navbar d-flex">
+                    <li><a href="#">IN EVIDENZA</a></li>
+                    <li><a href="#">PODCAST</a></li>
+                    <li><a href="#">CLASSIFICHE</a></li>
+                    <li><a href="#">GENERI E MOOD</a></li>
+                    <li><a href="#">NUOVE USCITE</a></li>
+                    <li><a href="#">SCOPRI</a></li>
+                </ul>
+            </nav>
+
+            <section id="recently-played">
+                <h2>Recently Played</h2>
+                <ul class="d-flex row">
+
+                    <li>
+                        <article>
+                            <figure>
+                                <img src="img/metal_lifting.jpg" alt="Metal">
+                            </figure>
+                            <h4>Heavy Metal</h4>
+                            <address>Subtitle</address>
+                        </article>
+                    </li>
+                    <li>
+                        <article>
+                            <figure>
+                                <img src="img/metal_lifting.jpg" alt="Metal">
+                            </figure>
+                            <h4>Heavy Metal</h4>
+                            <address>Subtitle</address>
+                        </article>
+                    </li>
+                    <li>
+                        <article>
+                            <figure>
+                                <img src="img/metal_lifting.jpg" alt="Metal">
+                            </figure>
+                            <h4>Heavy Metal</h4>
+                            <address>Subtitle</address>
+                        </article>
+                    </li>
+                    <li>
+                        <article>
+                            <figure>
+                                <img src="img/metal_lifting.jpg" alt="Metal">
+                            </figure>
+                            <h4>Heavy Metal</h4>
+                            <address>Subtitle</address>
+                        </article>
+                    </li>
+                    <li>
+                        <article>
+                            <figure>
+                                <img src="img/metal_lifting.jpg" alt="Metal">
+                            </figure>
+                            <h4>Heavy Metal</h4>
+                            <address>Subtitle</address>
+                        </article>
+                    </li>
+                    <li>
+                        <article>
+                            <figure>
+                                <img src="img/metal_lifting.jpg" alt="Metal">
+                            </figure>
+                            <h4>Heavy Metal</h4>
+                            <address>Subtitle</address>
+                        </article>
+                    </li>
+
+                </ul>
+            </section>
+
+            <section id="for-you">
+                <h2>Created for John Doe</h2>
+                <ul class="d-flex row">
+
+                    <li>
+                        <article>
+                            <figure>
+                                <img src="img/metal_lifting.jpg" alt="Metal">
+                            </figure>
+                            <h4>Heavy Metal</h4>
+                            <address>Subtitle</address>
+                        </article>
+                    </li>
+                    <li>
+                        <article>
+                            <figure>
+                                <img src="img/metal_lifting.jpg" alt="Metal">
+                            </figure>
+                            <h4>Heavy Metal</h4>
+                            <address>Subtitle</address>
+                        </article>
+                    </li>
+            </section>
+
+            <section id="popular">
+                <h2>Popular</h2>
+                <ul class="d-flex row">
+
+                    <li>
+                        <article>
+                            <figure>
+                                <img src="img/metal_lifting.jpg" alt="Metal">
+                            </figure>
+                            <h4>Heavy Metal</h4>
+                            <address>Subtitle</address>
+                        </article>
+                    </li>
+                    <li>
+                        <article>
+                            <figure>
+                                <img src="img/metal_lifting.jpg" alt="Metal">
+                            </figure>
+                            <h4>Heavy Metal</h4>
+                            <address>Subtitle</address>
+                        </article>
+                    </li>
+            </section>
 
 
-            <div class="player d-flex-col">
-                <div class="player-bar d-flex">
-                    <i class="fa-solid fa-shuffle"></i>
-                    <i class="fa-solid fa-backward-step"></i>
-                    <div class="circle"><i class="fa-solid fa-play"></i></div>
-                    <i class="fa-solid fa-forward-step"></i>
-                    <i class="fa-solid fa-rotate-right"></i>
-                </div>
-                <div class="progress-bar d-flex ">
-                    <span>0:25</span>
-                    <div class="empty-bar">
-                        <div class="full-bar"></div>
-                    </div>
-                    <span>4:35</span>
-                </div>
+        </div>
+
+    </main>
+
+    <footer class="d-flex">
+
+        <div class="album d-flex">
+            <div class="d-flex">
+                <figure><img src="img/sinister.jpeg" alt="Sinister"></figure>
+                <p>Sinister<br><span>Brano Nome</span></p>
             </div>
-
-
-
-            <div class="volume d-flex">
-                <div class="icons">
-                    <i class="fa-solid fa-list"></i>
-                    <i class="fa-solid fa-display"></i>
-                    <i class="fa-solid fa-volume-high"></i>
-                </div>
-                <div class="volume-bar d-flex ">
-
-                    <div class="empty-bar">
-                        <div class="full-bar"></div>
-                    </div>
-
-                </div>
+            <div class="d-flex-col dt-d-flex justify-center">
+                <i class="fa-regular fa-folder"></i>
+                <i class="fa-regular fa-heart"></i>
             </div>
-        </footer>
-    </div>
+        </div>
+
+
+        <div class="player d-flex-col">
+            <div class="player-bar d-flex">
+                <i class="fa-solid fa-shuffle"></i>
+                <i class="fa-solid fa-backward-step"></i>
+                <div class="circle"><i class="fa-solid fa-play"></i></div>
+                <i class="fa-solid fa-forward-step"></i>
+                <i class="fa-solid fa-rotate-right"></i>
+            </div>
+            <div class="progress-bar d-flex ">
+                <span>0:25</span>
+                <div class="empty-bar">
+                    <div class="full-bar"></div>
+                </div>
+                <span>4:35</span>
+            </div>
+        </div>
+
+
+
+        <div class="volume d-flex">
+            <div class="icons">
+                <i class="fa-solid fa-list"></i>
+                <i class="fa-solid fa-display"></i>
+                <i class="fa-solid fa-volume-high"></i>
+            </div>
+            <div class="volume-bar d-flex ">
+
+                <div class="empty-bar">
+                    <div class="full-bar"></div>
+                </div>
+
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>

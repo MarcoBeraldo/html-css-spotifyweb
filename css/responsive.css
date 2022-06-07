@@ -13,36 +13,59 @@
 
 
 
+    @media screen and (min-width: 769px) {
 
-}
+        main .main-navbar a {
+            font-size: 1rem;
+        }
+
+        #popular li,
+        #for-you li,
+        #recently-played li {
+            flex-basis: 25%;
+        }
+
+        footer .volume,
+        footer .album {
+            width: 15%;
+        }
+
+        footer .player {
+            width: 70%
+        }
 
 
-@media screen and (min-width: 769px) {
 
-    main .main-navbar a {
-        font-size: 1rem
+        footer .album .dt-d-flex {
+            flex-direction: row;
+        }
+
+        .volume .fa-list,
+        .volume .fa-display,
+        .volume .fa-volume-high {
+            margin-right: 10px;
+        }
     }
 
-    ;
+    @media screen and (min-width: 992px) {
 
-    footer .volume,
-    footer .album {
-        width: 15%;
+        #popular li,
+        #for-you li,
+        #recently-played li {
+            flex-basis: calc(100% / 6);
+        }
     }
 
-    footer .player {
-        width: 70%
+
+
+    /* @media screen and (max-width:500px) {
+
+    footer .album,
+    footer .volume {
+        display: none;
     }
 
-
-
-    footer .album .dt-d-flex {
-        flex-direction: row;
+    footer {
+        justify-content: center;
     }
-
-    .volume .fa-list,
-    .volume .fa-display,
-    .volume .fa-volume-high {
-        margin-right: 10px;
-    }
-}
+} */
