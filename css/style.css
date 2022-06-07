@@ -88,7 +88,7 @@ header {
     display: inline-block;
     height: 50px;
     padding: 0 35px;
-    margin-right: 10px;
+    margin-right: 50px;
     line-height: 50px;
 
     font-size: 1rem;
@@ -97,6 +97,10 @@ header {
 
     border: 2px solid #fff;
     border-radius: 30px;
+}
+
+.header-btn:hover {
+    transform: scale(1.1)
 }
 
 /* main navbar */
@@ -110,6 +114,11 @@ main .main-navbar a {
     text-decoration: none;
     color: var(--font-white);
     font-size: 0.7rem;
+    opacity: 0.5;
+}
+
+main .main-navbar a:hover {
+    opacity: 1;
 }
 
 main .main-navbar {
@@ -122,13 +131,13 @@ main .main-navbar {
     text-align: center;
 }
 
+/* main sections */
+
 #popular,
 #for-you,
 #recently-played {
-
     margin: 10px 20px 30px 20px;
     color: white;
-
 }
 
 #popular .row,
@@ -173,10 +182,36 @@ main .main-navbar {
     border-radius: 50%;
 }
 
+#popular figure,
+#for-you figure,
+#recently-played figure {
+    position: relative;
 
+}
 
+#popular article:hover figure::after,
+#for-you article:hover figure::after,
+#recently-played article:hover figure::after {
+    content: '\f144';
+    font: var(--fa-font-solid);
+    font-size: 3rem;
+    display: inline-block;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
 
-/* sidebar */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%)
+}
+
+#popular article:hover img,
+#for-you article:hover img,
+#recently-played article:hover img {
+    filter: opacity(0.5)
+}
+
+/* sidebar desktop */
 
 #full-sidebar {
     flex-shrink: 0;
@@ -185,7 +220,6 @@ main .main-navbar {
     overflow-y: hidden;
 
     display: none;
-
 }
 
 
@@ -267,10 +301,20 @@ main .main-navbar {
     font-size: 1.3rem;
     font-weight: 600;
     text-decoration: none;
-    color: var(--font-gray);
+    opacity: 0.5;
+    color: #fff;
 
     position: relative;
     top: 4px;
+}
+
+.new-playlist:hover span {
+    opacity: 1;
+    color: #fff;
+}
+
+.new-playlist:hover .fa-plus {
+    background-color: #fff;
 }
 
 .full-sidebar-list {
@@ -339,12 +383,21 @@ main .main-navbar {
     display: inline-block;
     color: var(--font-gray);
     margin-bottom: 10px;
+    text-decoration: none;
+}
+
+.sidebar-profile a:hover {
+    color: #fff;
 }
 
 .sidebar-profile hr {
     margin-bottom: 10px;
     margin-right: 20px;
 }
+
+
+
+/* sidebar mobile */
 
 #min-sidebar {
     width: 80px;
@@ -452,13 +505,8 @@ footer .player-bar {
     font-size: 1.3rem;
     height: 1.3rem;
     margin-top: 20px;
-}
-
-footer .player-bar .fa-shuffle,
-footer .player-bar .fa-backward-step,
-footer .player-bar .circle,
-footer .player-bar .fa-forward-step {
-    margin-right: 30px;
+    justify-content: space-around;
+    width: 80%
 }
 
 footer .player-bar .circle {
@@ -479,7 +527,6 @@ footer .progress-bar {
     align-items: center;
     color: #fff;
     font-size: 0.8rem;
-
 }
 
 footer .empty-bar {
@@ -522,11 +569,27 @@ footer .volume .volume-bar {
     display: inline-block;
     width: 50%;
     align-items: center;
+}
 
+footer .fa-folder:hover,
+footer .fa-heart:hover,
+footer .player-bar *:hover,
+footer .icons *:hover {
+    color: #fff;
+    transform: scale(1.2);
+    cursor: pointer
 }
 
 .volume .fa-list,
 .volume .fa-display,
 .volume .fa-volume-high {
     margin-right: 5px;
+}
+
+.full-sidebar-playlist a:hover {
+    color: #fff;
+}
+
+.full-sidebar-main-menu a:hover {
+    color: #fff;
 }

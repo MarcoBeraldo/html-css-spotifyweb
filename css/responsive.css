@@ -34,7 +34,9 @@
         width: 70%
     }
 
-
+    footer .player-bar {
+        width: 40%;
+    }
 
     footer .album .dt-d-flex {
         flex-direction: row;
@@ -53,6 +55,10 @@
     #for-you li,
     #recently-played li {
         flex-basis: calc(100% / 6);
+    }
+
+    footer .player-bar {
+        width: 30%;
     }
 }
 
