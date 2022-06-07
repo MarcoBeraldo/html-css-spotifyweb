@@ -11,54 +11,54 @@
         left: 300px;
     }
 
+}
 
+@media screen and (min-width: 769px) {
 
-    @media screen and (min-width: 769px) {
-
-        main .main-navbar a {
-            font-size: 1rem;
-        }
-
-        #popular li,
-        #for-you li,
-        #recently-played li {
-            flex-basis: 25%;
-        }
-
-        footer .volume,
-        footer .album {
-            width: 15%;
-        }
-
-        footer .player {
-            width: 70%
-        }
-
-
-
-        footer .album .dt-d-flex {
-            flex-direction: row;
-        }
-
-        .volume .fa-list,
-        .volume .fa-display,
-        .volume .fa-volume-high {
-            margin-right: 10px;
-        }
+    main .main-navbar a {
+        font-size: 1rem;
     }
 
-    @media screen and (min-width: 992px) {
+    #popular li,
+    #for-you li,
+    #recently-played li {
+        flex-basis: 25%;
+    }
 
-        #popular li,
-        #for-you li,
-        #recently-played li {
-            flex-basis: calc(100% / 6);
-        }
+    footer .volume,
+    footer .album {
+        width: 15%;
+    }
+
+    footer .player {
+        width: 70%
     }
 
 
 
-    /* @media screen and (max-width:500px) {
+    footer .album .dt-d-flex {
+        flex-direction: row;
+    }
+
+    .volume .fa-list,
+    .volume .fa-display,
+    .volume .fa-volume-high {
+        margin-right: 10px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+
+    #popular li,
+    #for-you li,
+    #recently-played li {
+        flex-basis: calc(100% / 6);
+    }
+}
+
+
+
+/* @media screen and (max-width:500px) {
 
     footer .album,
     footer .volume {
