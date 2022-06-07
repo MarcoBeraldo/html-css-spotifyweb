@@ -98,12 +98,38 @@ header {
     border-radius: 30px;
 }
 
+/* main navbar */
+
+main .main-navbar li {
+    margin-bottom: 30px;
+    padding: 5px;
+}
+
+main .main-navbar a {
+    text-decoration: none;
+    color: var(--font-white);
+    font-size: 0.7rem;
+}
+
+main .main-navbar {
+    max-width: 95%;
+    margin: 0 auto;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 130px;
+    list-style-type: none;
+}
+
+
+
+
 
 
 
 /* sidebar */
 
 #full-sidebar {
+    flex-shrink: 0;
     background-color: black;
     width: 300px;
     overflow-y: hidden;
@@ -395,6 +421,7 @@ footer .player-bar .circle {
 }
 
 footer .progress-bar {
+    justify-content: center;
     width: 70%;
     align-items: center;
     color: #fff;
@@ -403,6 +430,7 @@ footer .progress-bar {
 }
 
 footer .empty-bar {
+
     display: inline-block;
     height: 4px;
     width: 80%;
